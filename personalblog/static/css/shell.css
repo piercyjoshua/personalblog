@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Seaside Resort";
+    src: url("/static/fonts/Seaside/SEASRN.ttf");
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("/static/fonts/Rubik/Rubik-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/static/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Pacifico";
+    src: url("/static/fonts/Pacifico/Pacifico-Regular.ttf");
+}
+html,
+body,
+body > div.container-fluid {
+    min-height: 100%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background: #202020;
+    width: 100%;
+}
+
+/* Heading */
+
+.site-heading {
+    /*background: #800020; This is the original, burgundy color. Trying out a new "rust" color picked from the old site*/
+    background: url('/static/images/bg-new.png') no-repeat;
+    background-size: cover;
+    color: #d5d5d5;
+    min-height: 4.5in;
+}
+.site-heading::before {
+    content: ' ';
+    background: linear-gradient(180deg, #9F1B06, black);
+}
+.site-title > div > h1 {
+    text-align: center;
+    padding-top: 1in !important;
+    font: 80pt "Seaside Resort", sans-serif !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.site-slogan {
+    text-align: center;
+    font: 24pt "Pacifico" !important;
+    margin: 0px !important;
+}
+
+.site-title > div > h1 {
+    line-height: 110px !important;
+}
+
+@media (max-width: 750px) {
+    .site-title > div > h1 {
+        font: 40pt "Seaside Resort", sans-serif !important;
+    }
+    .site-slogan {
+        font: 12pt "Pacifico" !important;
+    }
+}
+.heading-1 {
+    text-align: center;
+    color: gold;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.heading-2 {
+    text-align: center;
+    padding-top: 15px;
+    color: gold;
+    font-weight: bold;
+}
+
+/* Nav */
+
+.site-link,
+.footer-link {
+    font: 14pt "Rubik", sans-serif !important;
+}
+ul.site-link-list {
+    padding-left: 0px;
+    text-align: center;
+}
+.site-link.scrolling {
+    background-image: url('/static/images/nkbg-old.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 0% 85% !important;
+}
+.social-media,
+.phone-number,
+.site-link-list {
+    background-image: none !important;
+    background: none !important;
+}
+ul.site-link-list > li {
+    list-style: none;
+    display: inline-block;
+}
+ul.site-link-list > li > a,
+ul.site-link-list > li > a:visited {
+    color: #d5d5d5;
+}
+ul.site-link-list > li:not(:first-child) {
+    margin-left: 8px;
+}
+
+/* Body */
+
+
+/*.body-gradient {
+    width: 100%;
+}*/
+
+.page-body {
+    min-height: 4.25in;
+    padding-top: 25px;
+    background-color: #202020;
+    color: whitesmoke;
+}
+.content-center {
+    text-align: center;
+}
+
+/* Footer */
+
+.page-footer {
+    /*  background: #800020; This is the original color. */
+    background: url('/static/images/bg-footer.png') no-repeat;
+    background-size: cover;
+    color: #d5d5d5;
+    color: whitesmoke;
+    min-height: 1.5in;
+    padding-top: 2em;
+}
+.footer-link a {
+    color: whitesmoke;
+}
+.footer-roots {
+    font: 12pt "Pacifico" !important;
+    padding-top: .5em;
+    color: whitesmoke;
+}
+.heading-text {
+    font-size: 20px;
+}
+.phone-number > a {
+    color: gold;
+}
+.phone-number > a:hover {
+    color: white;
+}
+.subheading {
+    font-family: "Rubik", sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #202020;
+    background-color: #202020;
+}
+body::-webkit-scrollbar-thumb {
+    /*    
+  background-color: #FCD701;
+  outline: 1px solid #FCD701;
+*/
+    background-color: #404040;
+    outline: 1px solid #404040;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: #202020;
+    outline: 1px solid #202020;
+}
+
+.before-footer {
+    background-color: #202020;
+}
+/*
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #202020;
+  background-color: #202020;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #9F1B06;
+  outline: 0px solid #9F1B06;
+  border-radius: 0px 50px 0px 50px;
+  border-left: 2px solid #202020;
+  border-right: 2px solid #202020;
+}
+*/

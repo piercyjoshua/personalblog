@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+
+<head>
+    <title>{% block title %}Noble Kava Boone!{% endblock title %}</title>
+
+    {% block css %} {% block css_bootstrap %}
+    <link rel="stylesheet" type="text/css" href="{% static 'libraries/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'libraries/bootstrap/css/bootstrap-theme.min.css' %}" /> {% endblock css_bootstrap %} {% block css_site %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/shell.css' %}" /> {% endblock css_site %} {% block css_page %} {% endblock css_page %} {% endblock css %}
+</head>
+
+<body>
+    <div class="container-fluid">
+        {% block site_heading %}
+        <div class="site-heading row">
+            {% block site_heading_content %}
+
+            <div class="col-md-12">
+                <div class="site-banner row">
+                    <div class="col-md-12">
+                        <div class="site-title row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h1 class="logo-text">{{ "slime.io"|upper }}</h1>
+                            </div>
+                        </div>
+                        <div class="site-slogan row">
+                         
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            {% endblock site_heading_content %}
+        </div>
+        <div class="heading-end"></div>
+        {% endblock site_heading %}
+        
+        <!-- This is for a transition if needed.
+        <div class="row body-transition">
+            <img class="body-gradient" src="{% static '/images/45524001.png' %}">
+        </div> -->
+        
+        <div class="page-body row">
+            <div class="col-md-8 col-md-offset-2">
+                {% block content %} {% endblock content %}
+            </div>
+        </div>
+
+        <div class="before-footer row">
+            <div class="col-md-12">
+            {% block before_footer %}
+        {% endblock before_footer %}
+        </div>
+        </div>
+        {% block site_footer %}
+        <div class="page-footer row">
+            <div class="col-md-12">
+                {% block site_footer_content %}
+                <div class="footer-link row">
+                    
+                </div>
+                <div class="footer-roots content-center">
+                    <!--slime.io-->
+                </div>
+                {% endblock site_footer_content %}
+            </div>
+        </div>
+        {% endblock site_footer %}
+    </div>
+
+    {% block js %} {% block js_bootstrap %}
+    <script type="text/javascript" src="{% static 'libraries/jquery/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'custom/js/scroll.js' %}"></script>
+    {% endblock js_bootstrap %} {% block js_page %} {% endblock js_page %} {% endblock js %}
+</body>

@@ -1,0 +1,32 @@
+.page-body {
+    background-color: #202020;
+    color: whitesmoke;
+}
+
+.home-content-text {
+    padding-top: 1.5em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.home-favis {
+    margin-top: 1.5em;
+}
+
+.events-link, .pickup-link, .apply-link {
+    margin-top: 10px;
+    color: gold;
+    font-weight: bold;
+}
+
+.events-text, .pickup-text, .apply-text {
+    margin-top: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.events:hover {
+    transition: all 0.8s;
+    transform: scale(1.2);
+    position: relative;
+}
